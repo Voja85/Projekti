@@ -1,50 +1,150 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <title>Index strana</title>
+    <style>
+        header {
+            text-align: center;
+            padding: 8px;
+            background-color: none;
+            border: 3px solid black;
+            font-size: none
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: none;
+            border: 3px solid black;
+            font-size: none;
+        }
+
+        .button-holder {
+            margin-left: 80px;
+            width: 90%;
+            height: 100px;
+            text-align: center;
+            padding: 8px;
+            position: relative;
+        }
+
+        section {
+            margin-left: 90px;
+            width: 90%;
+            height: 550px;
+        }
+
+        table,
+        th {
+            border: 3px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+
+        tbody td {
+            padding: 20px;
+            margin-right: 20px;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+        }
+
+        hr {
+            background-color: black;
+            height: 2px;
+            border-color: black;
+        }
+
+        a {
+            color: black;
+            border: 3px solid black;
+            background-color: none;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            padding: 20px 0;
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+        }
+    </style>
+</head>
 
 <body>
-<header>
-    <h1>H1 NASLOVi</h1>
-</header>
-<nav>
-<h1 style="color: black;"><a href="http://www.blic.rs" target="_blank">create link style button</a></h1>
-</nav>
-<section>
-<table> 
-    <tr>
-        
-        <th colspan="2" style=" height: 90px;"><p>IDEMO DALJE</p></th>
-    </tr>
-               
-    <tr>
-        <th style="width: 50%;">
-            <dl>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-            </dl>
-        </th>
-        <th>
-            <dl>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-                <dd><hr></dd>
-            </dl>
-        </th>
-    </tr>
-       
-</table>
-
-</section>
-<footer>
-<h1>F1 naslov</h1>
-</footer>
-
+    <header>
+        <h1>H1 NASLOVi samo 1 h1 na strani</h1>
+    </header>
+    <div class="button-holder">
+        <a href="http://www.blic.rs" target="_blank">create link style button</a>
+    </div>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" style=" height: 90px;">
+                            <p>IDEMO DALJE</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                        <td style="width:50%">
+                            <hr>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h1>F1 naslov</h1>
+    </footer>
 </body>
 
 </html>
