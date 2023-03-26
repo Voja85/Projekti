@@ -121,6 +121,10 @@
             display: inline-block;
         }
 
+        .desk {
+            display: inline;
+        }
+
     </style>
 
 </head>
@@ -181,20 +185,51 @@
                 alt="slika iz srednje skole" width="100%" height="20px">
 
             <div class="pisanje">
-                <img style="padding-right: 6px;"
+                <a href="http://blic.rs" target="_blank">
+                    <img style="padding-right: 15px; padding-top: 5px;"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px">
+                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
+                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                  
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+
+
+                <div class="desc">
+                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
+                    
+                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                </div> 
 
                 <img style="padding-right: 6px;"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px">
+                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
+                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                  
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+
+
+                <div class="desc">
+                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
+                    
+                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                </div> 
 
                 <img style="padding-right: 6px;"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px">
+                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
+                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                  
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+
+
+                <div class="desc">
+                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
+                    
+                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                </div> 
             </div>
         </aside>
 
