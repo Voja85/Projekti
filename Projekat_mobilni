@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prodavnica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .container {
+            position: relative;
+            line-height: 0.3;
+        }
+
+        .text {
+            position: absolute;
+            color: white;
+            top: 10px;
+            left: 50px;
+            font-size: 12px;
+            line-height: 0.3;
+            font-family: Arial;
+        }
+
+        .drop {
+            height: 35px;
+            background-color: rgb(66, 65, 65);
+            padding-top: 5px;
+            font-family: Arial;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-size: 10px;
+            padding-left: 8px;
+            padding-right: 10px;
+        }
+
+        a:visited {
+            color: rgb(199, 193, 193);
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .textbody {
+            position: absolute;
+            width: 240px;
+            color: white;
+            left: 20px;
+            top: 1px;
+            font-size: 10px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            overflow-wrap: break-word;
+            text-align: justify;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        nav {
+            float: left;
+            width: 100%;
+            text-align: justify;
+            background-color: antiquewhite;
+            padding-left: 10px;
+            font-size: 10px;
+            height: 160px;
+        }
+
+        aside {
+            float: left;
+            width: 100%;
+            border: 1px solid black;
+            height: 240px;
+        }
+
+        .pisanje {
+            border: 2px solid black;
+            background-color: aquamarine;
+            padding: 0px;
+            overflow: scroll;
+            height: 200px;
+            text-align: justify;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 9px;
+        }
+
+        footer {
+            float: left;
+            background-color: rgb(197, 138, 66);
+            text-align: left;
+            font-size: 9px;
+            line-height: 0.1;
+            height: 60px;
+            padding-left: 10px;
+        }
+
+        .ikone {
+            margin-left: 80px;
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQggxAU6OEl66v1TvFgDGYaGRjo5CM49yM9wQ&usqp=CAU"
+            alt="slika naslovna" width="100%" height="80px">
+        <div class="text">
+            <p>Provereno</p>
+            <p>Osvezava</p>
+            <p>Gde god pozelite</p>
+        </div>
+    </div>
+
+    <div class="drop">
+        <ul style="list-style-type: none; display: inline;">
+            <li style="float: left;padding-left: 5px;"><img src="/home/voja/Desktop/Pictures/index.png" alt="zastava"
+                    width="20px" height="10px"></li>
+            <li style="float: left;"><a href="https://blic.rs" target="_parent">Pocetna</a></li>
+            <li style="float: right;"><a href="https://blic.rs" target="_parent">Kupi</a></li>
+            <li style="float: right;"><a href="https://kurir.rs" target="_parent">Market</a></li>
+            <li style="float: right;"><a href="https://kurir.rs" target="_parent">Recept</a></li>
+            <li style="float: right;"><a href="https://blic.rs" target="_parent">Ko pravi</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VAwYKlKLJJ9KXPIR_R4TyL85jx9p8AdD3A&usqp=CAU"
+            alt="slika pozadine" width="100%" height="150">
+        <div class="textbody">
+            <p style="font-size: 15px;">Dobar dan i dobrodosli</p>
+            <p style="border-bottom: 1px solid; width:240px; color: white;"></p>
+            <p style="line-height: normal;">Najbitnije je ici stalno ici u teretanu, uvek i stalno kada se god moze i
+                tako stalno i stalno, ali stalno i opet stalno</p>
+            <p>1. Odaberite u koju teretanu zelite</p>
+            <p>2. Odaberite velicinu tega koji zelite</p>
+        </div>
+    </div>
+
+    <section>
+        <nav>
+            <p style="font-size: 15px; font-family: Arial; line-height: 20px;">SERTIFIKATI</p>
+            <p style="overflow-wrap: break-word; padding-right: 10px;font-size: 10px;">Svi za jednog jedan za sve, i
+                tako dalje do 80 procenata hhhhhhh
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfhahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaahhhhhhhhhhhhhhhhhhhh hh ov0e cisto za probu zbog automatskog prelamanja tekstaprelamanja teksta
+            </p>
+        </nav>
+
+        <aside style="padding-left: 10px; padding-right: 10px; padding-bottom: opx;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
+                alt="slika iz srednje skole" width="100%" height="20px">
+
+            <div class="pisanje">
+                <img style="padding-right: 6px;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
+                    alt="slika iz srednje skole" width="100%" height="30px">
+                <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+
+                <img style="padding-right: 6px;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
+                    alt="slika iz srednje skole" width="100%" height="30px">
+                <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+
+                <img style="padding-right: 6px;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
+                    alt="slika iz srednje skole" width="100%" height="30px">
+                <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
+            </div>
+        </aside>
+
+    </section>
+
+    <footer>
+            <p style="line-height: 0.1">copyright 2023. All Right Reserved</p>
+            <p style="float: left;">desgnet by Pera Kojot</p>
+            <p style="float: right; padding-right: 10px;">Kontakt 060/656-342</p>
+
+            <div class="ikone">
+                <a style="color: blue;" href="https://twitter.com" target="_blank"><ion-icon
+                        name="logo-twitter"></ion-icon></a>
+                <a style="color: blue;" href="https://twitter.com" target="_blank"><ion-icon
+                        name="logo-facebook"></ion-icon></a>
+                <a style="color: rgb(174, 31, 202);" href="https://twitter.com" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
