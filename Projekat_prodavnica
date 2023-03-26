@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prodavnica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+
+        body {
+            margin-top: 0;
+            margin-left: 18.5%;
+            margin-right: 18.5%; 
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            color: rgb(15, 15, 15);
+            top: 25px;
+            left: 300px;
+            font-size: 25px;
+            line-height: 0.3;
+            font-family: Arial;
+            font-size: 2em;
+        }
+
+        .drop {
+            height: 45px;
+            background-color: rgb(66, 65, 65);
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: Arial;       
+        }
+
+        li {
+           display: inline;
+        }
+
+        a:link {
+            text-decoration: none;
+            font-size: 19px;
+            padding-left: 15px;
+            padding-right: 20px;
+        }
+
+        a:visited {
+            color: rgb(199, 193, 193);
+        }
+
+        a:hover {
+            color: white;
+        }
+
+       .textbody {
+            position: absolute;
+            width: 1060px;
+            color: white;
+            top: 10px;
+            left: 20px;
+            font-size: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            overflow-wrap: break-word;
+            text-align: justify;
+        }    
+        
+        * { box-sizing: border-box;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+  
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        nav {
+            float: left;
+            width: 70%;
+            text-align: justify;
+            height: 400px;
+            background-color: antiquewhite;
+            padding-left: 10px;
+        }
+
+        aside {
+            float: left;
+            width: 30%;
+            border: 1px solid black;
+            height: 400px;
+        }
+
+        .pisanje {
+            border: 2px solid black;
+            background-color: aquamarine;
+            padding: 5px;
+            overflow: scroll;
+            height: 345px;
+            text-align: justify;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        footer {
+            background-color: bisque;
+            text-align: left;
+            font-size: smaller;
+            line-height: 0.2;
+            height: 60px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="/home/voja/Desktop/Pictures/mraz.jpg" alt="slika naslovna" width="100%" height="200px"> 
+        <div class="text">
+            <p>Provereno</p>
+            <p>Osvezava</p>
+            <p>Gde god pozelite</p>
+        </div>
+    </div>
+    
+
+    <div class="drop">  
+        <ul style="list-style-type: none;display: inline;">
+            <li style="float: left;"><img src="/home/voja/Desktop/Pictures/index.png" alt="zastava" width="30px" height="20px"></li>    
+            <li style="float: left; padding-left: 10px;"><a href="https://blic.rs" target="_parent">Pocetna</a></li>
+            <li style="float: right;"><a href="https://blic.rs" target="_parent">Kupi</a></li>
+            <li style="float: right;"><a href="https://kurir.rs" target="_parent">Market</a></li>
+            <li style="float: right;"><a href="https://kurir.rs" target="_parent">Recept</a></li>
+            <li style="float: right;"><a href="https://blic.rs" target="_parent">Ko pravi</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="container">
+        <img src="/home/voja/Desktop/Pictures/images.jpeg" alt="slika pozadine" width="100%" height="500">
+        <div class="textbody">
+        <p style="font-size: 30px;">Dobar dan i dobrodosli</p>
+        <p style="border-bottom: 1px solid; width:1060px; color: white;"></p>
+        <p>Najbitnije je ici stalno ici u teretanu, uvek i stalno kada se god moze i tako stalno i stalno, ali stalno i opet stalno</p>
+        <p>1. Odaberite u koju teretanu zelite</p>
+        <p>2. Odaberite velicinu tega koji zelite</p>
+        </div>
+    </div>
+
+    <section>
+        <nav>
+            <p style="font-size: 25px; font-family: Arial; line-height: 30px;">SERTIFIKATI</p>
+            <p style="overflow-wrap: break-word; padding-right: 10px;">Svi za jednog jedan za sve, i tako dalje do 80 procenata hhhhhhh
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfhahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaahhhhhhhhhhhhhhhhhhhh hh ov0e cisto za probu zbog automatskog prelamanja tekstaprelamanja teksta</p>
+        </nav>
+        
+        <aside style="padding: 5px;">
+            <img src="/home/voja/Desktop/Pictures/slika1.jpg" alt="slika iz srednje skole" width="100%" height="40px">
+                
+            <div class="pisanje">
+                <img  style="padding-left: 15px;" src="/home/voja/Desktop/Pictures/nar.jpeg"> 
+                <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati 
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                </p>
+                
+                <img style="padding-left: 15px;" src="/home/voja/Desktop/Pictures/nar.jpeg"> 
+                <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati 
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati 
+                </p>
+
+               <img style="padding-left: 15px;" src="/home/voja/Desktop/Pictures/nar.jpeg"> 
+               <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati 
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati
+                sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati 
+                </p>
+            </div>  
+        </aside>
+    </section>
+
+   <footer>
+
+        <p style="line-height: 0.1;">copyright 2023. All Right Reserved</p>
+        <p style="float: left;">desgnet by Pera Kojot</p>
+        <p style="float: right;">Kontakt 060/656-342</p>
+
+   </footer>
+
+</body>
+
+</html>
