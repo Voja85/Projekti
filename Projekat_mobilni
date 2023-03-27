@@ -123,6 +123,7 @@
 
         .desk {
             display: inline;
+            
         }
 
     </style>
@@ -192,13 +193,12 @@
                     name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
-
+                <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
 
                 <div class="desc">
-                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
-                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
-                    
-                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                    <ion-icon name="thumbs-up-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="arrow-redo-outline"></ion-icon>
                 </div> 
 
                 <img style="padding-right: 6px;"
@@ -207,13 +207,12 @@
                     name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
-
+                <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
 
                 <div class="desc">
-                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
-                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
-                    
-                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                    <ion-icon name="thumbs-up-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="arrow-redo-outline"></ion-icon>
                 </div> 
 
                 <img style="padding-right: 6px;"
@@ -222,13 +221,12 @@
                     name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
-
+                <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
 
                 <div class="desc">
-                    <ion-icon name="thumbs-up" style="padding-right: 40px;"></ion-icon>
-                    <ion-icon name="chatbox" style="padding-right: 40px;"></ion-icon>
-                    
-                    <ion-icon name="arrow-redo" style="padding-left: 10px"></ion-icon>
+                    <ion-icon name="thumbs-up-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="chatbox-outline" style="padding-right: 40px;"></ion-icon>
+                    <ion-icon name="arrow-redo-outline"></ion-icon>
                 </div> 
             </div>
         </aside>
