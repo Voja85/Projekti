@@ -1,0 +1,89 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+
+    <title>Prodavnica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    * { box-sizing: border-box;
+    }
+
+    *,               
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    }
+
+    .flex-container {
+     display: flex;
+     flex-direction: column-reverse;
+     flex-direction: column;
+     flex-direction: row-reverse;
+     flex-wrap: nowrap;
+     flex-wrap: wrap-reverse;
+     justify-content: center;
+     justify-content: flex-end;
+     justify-content: space-around;
+     align-items: center;
+     align-content: space-around;
+     justify-content: center;
+     align-items: center;
+     background-color: DodgerBlue;
+}
+
+    .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+    .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+/* responsive razne varijante */
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* upisati komentar ovakva komanda ide uvek u style */
+<!-- Write your comments here -->
+    </style>
+
+    </head>
+
+    <body>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
