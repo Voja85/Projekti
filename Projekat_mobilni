@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- SCRIPT TAGOVI IDU NA KRAJ PRE ZATVARAJUCEG BODY TAGA -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -26,9 +27,10 @@
 
     <div class="drop">
         <ul style="list-style-type: none; display: inline;">
-            <li style="float: left;padding-left: 5px;"><img src="/home/voja/Desktop/Pictures/index.png" alt="zastava"
-                    width="20px" height="10px"></li>
-            <li style="float: left;"><a href="https://blic.rs" target="_parent">Pocetna</a></li>
+            <li style="float: left;padding-left: 5px;">
+                <img src="/home/voja/Desktop/Pictures/index.png" alt="zastava" width="20px" height="10px"> <!-- JA OVU SLIKU IZ SRC NE VIDIM U ASSETIMA KAO STO VIDIM STYLES.CSS -->
+            </li>
+            <li style="float: left;"><a href="https://blic.rs" target="_parent">Pocetna</a></li> <!-- AKO VEC IMAMO CSS FAJL NEMA SMISLA PISATI STILOVE INLINE -->
             <li style="float: right;"><a href="https://blic.rs" target="_parent">Kupi</a></li>
             <li style="float: right;"><a href="https://kurir.rs" target="_parent">Market</a></li>
             <li style="float: right;"><a href="https://kurir.rs" target="_parent">Recept</a></li>
@@ -38,10 +40,9 @@
 
 
     <div class="container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VAwYKlKLJJ9KXPIR_R4TyL85jx9p8AdD3A&usqp=CAU"
-            alt="slika pozadine" width="100%" height="150">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VAwYKlKLJJ9KXPIR_R4TyL85jx9p8AdD3A&usqp=CAU" alt="slika pozadine" width="100%" height="150">
         <div class="textbody">
-            <p style="font-size: 15px;">Dobar dan i dobrodosli</p>
+            <p style="font-size: 15px;">Dobar dan i dobrodosli</p> <!-- AKO VEC IMAMO CSS FAJL NEMA SMISLA PISATI STILOVE INLINE -->
             <p style="border-bottom: 1px solid; width:240px; color: white;"></p>
             <p style="line-height: normal;">Najbitnije je ici stalno ici u teretanu, uvek i stalno kada se god moze i
                 tako stalno i stalno, ali stalno i opet stalno</p>
@@ -52,7 +53,7 @@
 
     <section>
         <nav>
-            <p style="font-size: 15px; font-family: Arial; line-height: 20px;">SERTIFIKATI</p>
+            <p style="font-size: 15px; font-family: Arial; line-height: 20px;">SERTIFIKATI</p> <!-- AKO VEC IMAMO CSS FAJL NEMA SMISLA PISATI STILOVE INLINE -->
             <p style="overflow-wrap: break-word; padding-right: 10px;font-size: 10px;">Svi za jednog jedan za sve, i
                 tako dalje do 80 procenata hhhhhhh
                 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfhahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -60,16 +61,14 @@
             </p>
         </nav>
 
-        <aside style="padding-left: 10px; padding-right: 10px; padding-bottom: opx;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                alt="slika iz srednje skole" width="100%" height="20px">
+        <aside style="padding-left: 10px; padding-right: 10px; padding-bottom: opx;"> <!-- AKO VEC IMAMO CSS FAJL NEMA SMISLA PISATI STILOVE INLINE -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU" alt="slika iz srednje skole" width="100%" height="20px">
 
             <div class="pisanje">
                 <a href="http://blic.rs" target="_blank">
-                    <img style="padding-right: 15px; padding-top: 5px;"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
-                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                    <img style="padding-right: 15px; padding-top: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU" alt="slika iz srednje skole" width="100%" height="30px">
+                    <ion-icon name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon>
+                </a>
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
                 <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
@@ -82,8 +81,9 @@
 
                 <img style="padding-right: 6px;"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
-                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                    alt="slika iz srednje skole" width="100%" height="30px">
+                    <ion-icon name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon>
+                </a> <!-- A GDE JE OTVARAJUCI A TAG-->
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
                 <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
@@ -96,8 +96,9 @@
 
                 <img style="padding-right: 6px;"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi5lArLv2TVC1VtZ2RaP4keIoe2krB29lh1g&usqp=CAU"
-                    alt="slika iz srednje skole" width="100%" height="30px"><ion-icon
-                    name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon></a>
+                    alt="slika iz srednje skole" width="100%" height="30px">
+                    <ion-icon name="logo-facebook" style="float: right; color: rgb(45, 15, 180); padding-right: 10px;"></ion-icon>
+                </a><!-- A GDE JE OTVARAJUCI A TAG-->
                   
                 <p>sve ovo treba isprobati sve ovo treba isprobati sve ovo treba isprobati</p>
                 <p style="border-bottom: 1px solid gray; opacity: 0.5; width: 265px;"></p>
@@ -125,7 +126,7 @@
                 <a style="color: rgb(174, 31, 202);" href="https://twitter.com" target="_blank"><ion-icon
                         name="logo-instagram"></ion-icon></a>
             </div>
-        </div>
+        </div> <!-- A GDE JE OTVARAJUCI DIV TAG-->
     </footer>
 
 </body>
