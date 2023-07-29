@@ -1,13 +1,26 @@
 body {
     margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20%;
+    width: 60%;
 }
 
 section {
     width: 100%;
 }
 
+footer {
+    float: left;
+    background-color: rgb(197, 138, 66);
+    font-size: 9px;
+    line-height: 0.1;
+    height: 60px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
 .container {
     position: relative;
     line-height: 0.3;
@@ -15,10 +28,10 @@ section {
 }
 
 .topnav {
-    height: 50px;
+    height: 60px;
     background-color: black;
     font-family: Arial;
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 10px;
@@ -31,8 +44,9 @@ section {
 }
 
 .icon { 
-    margin-top: -8px;
+    margin-top: -9px;
 }
+
 .topnav .icon {
     display: none;
   }
@@ -76,6 +90,7 @@ section {
 
 .navd {
     float: right;
+    padding-top: 3px;
 }
 
 .left {float: left;
@@ -98,10 +113,6 @@ section {
     position: relative;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .glavnidva {
     float: left;
     width: 70%;
@@ -111,7 +122,6 @@ section {
     height: 500px;
     padding-left: 30px;
 }
-
 
 .glavnidva_naslov {
     font-size: 25px;
@@ -130,7 +140,7 @@ section {
     height: 500px;
     padding-left: 10px;
     padding-right: 10px;
-    overflow-inline: scroll;
+    overflow: scroll;
 }
 
 .glavnitrijedan {
@@ -153,16 +163,6 @@ section {
     font-size: 15px;
 }
 
-footer {
-    float: left;
-    background-color: rgb(197, 138, 66);
-    font-size: 9px;
-    line-height: 0.1;
-    height: 60px;
-    padding-left: 10px;
-    width: 100%;
-}
-
 .ikone {
     position: relative;
     display: block;
@@ -181,45 +181,67 @@ footer {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
+    .topnav {
+        font-size: 20px;
+        width: auto;
+    }
+
+    body {
+        width: auto;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
     .topnav a:not(.active) {
       display: none;
     }
 
     .topnav a.icon {
-      float: right;
-      display: block;
+        display:inline;
     }
+
+    body {
+        width: auto;
+        margin: auto;
+    }
+ 
 }
 
-@media screen and (max-width: 450px) {
-    .topnav.responsive {
+@media screen and (max-width: 500px) {
+    .topnav {
       position: relative;
       background-color: black;
       height: 50px;
       display: flex;
+      font-size: 15px;
     }
-    .topnav.responsive .icon {
-      right: 0;
-      top: 0;
+
+    .topnav .active {
+        padding-top: 3px;
     }
+
     .topnav.responsive a {
-      float:none;
-      display: inline-block;     
+      display:inline;     
       background-color: black;
     }
-    header .container {height:120px}
+
+    header .container {
+       height:100px
+    }
 
     footer .center  {
-        padding-top: 0px;
+       padding-top: 0px;
     }
 
     article .glavnidva {
-        width: 100%;
+       width: 100%;
     }
 
     aside .glavnitri {
-        width: 100%;
+       width: 100%;
     }
 }
 
