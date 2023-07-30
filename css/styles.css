@@ -207,7 +207,11 @@ footer {
         width: auto;
         margin: auto;
     }
- 
+
+    .topnav .icon {
+        position: absolute;
+        right:5px;
+    }
 }
 
 @media screen and (max-width: 500px) {
