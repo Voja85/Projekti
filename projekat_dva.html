@@ -4,12 +4,32 @@
         <title>Mobile first stilizovanje stranice</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <!-- OVDE POSTAVITI STILOVE KOJI SU POTREBNI-->
+      
+        <style>
+            header {
+                height: 60px;
+                text-align: left;
+        }
+
+            body {
+                width: 100%;
+                text-align: justify;
+                margin: auto;
+                padding: 5px;
+                background-color: #FAF0D7;
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+        </style>           
+        
+
     </head>
-    <body><!--  Sirina sadrzaja 100%, background color = #FAF0D7, font-size = 12px, line-height 14px -->
-        <header><!--  Visina 60px, sadrzaj centriran vertikalno po sredini -->
-            <img src="" alt="LOGO"><!-- 40x40px neki bilo koji -->
-            <nav><!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger -->
+    <body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfUsZ4hwJcL7g53YDvGk52M49xEbRW6etmQ&usqp=CAU" alt="LOGO" width="40px" height="40px">
+
+        <nav><!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger -->
                 <ul><!-- Otvorena lista se lepi uz header na donju ivicu headera i desnu ivicu ekrana i siroka je koliko najduzi link, background color = #CCEEBC -->
                     <li><!-- na hover dobijaju background color #FFF  -->
                         <a href="javascript:;">Link kratak</a><!-- linkovi nemaju underline, font-size = 14px, line-height = 16px, color = #00337C-->

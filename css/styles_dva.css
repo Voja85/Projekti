@@ -1,0 +1,25 @@
+body {
+    width: 400px;
+    
+}
+
+section {
+    
+}
+
+footer {
+   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
