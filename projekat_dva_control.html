@@ -4,115 +4,34 @@
     <title>Mobile first stilizovanje stranice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles_dva.css">
     <!-- OVO PREBACITI U ZASEBAN CSS FILE-->
-    <style>
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        header {
-            height: 60px;
-            text-align: center;
-            padding-top: 9px;
-        }
-
-        nav {
-            display: inline;
-        }
-
-        body {
-            width: 100%;
-            text-align: justify;
-            margin: 0;
-            background-color: #FAF0D7;
-            font-size: 12px;
-            line-height: 14px;
-        }
-
-        main {}
-
-        .container {
-            position: absolute;
-            display: none;
-            top: 48px;
-            width: 220px;
-            right: 0px;
-            list-style-type: none;
-            z-index: 1;
-        }
-
-        .container li {
-            display: block;
-            height: 30px;
-            background-color: #CCEEBC;
-            text-align: justify;
-            padding-left: 5px;
-            padding-top: 5px;
-        }
-
-        .container li a {
-            position: absolute;
-            text-decoration: none;
-            color: #00337C;
-            line-height: 16px;
-            font-size: 14px;
-            margin: 0px;
-        }
-
-        .container li:hover {
-            background-color: #FFF;
-        }
-
-        .icon {
-            width: 40px;
-            float: right;
-            font-size: 20px;
-            padding-top: 7px;
-        }
-
-        .class {
-            position: relative;
-            width: auto;
-        }
-
-        .class_text {
-            position: absolute;
-            text-align: center;
-            font-size: 24px;
-            color: #fff;
-            line-height: 28px;
-            top: 40%;
-        }
-
-        section {
-            height: auto;
-            width: 100%;
-        }
-    </style>
 
 </head>
 <body> <!--  Sirina sadrzaja 100%, background color = #FAF0D7, font-size = 12px, line-height 14px -->
     <header> <!--Visina 60px, sadrzaj centriran vertikalno po sredini --><!-- 40x40px neki bilo koji -->
         <div class="container">
             <!-- SVE SLIKE PREBACITI U ASSETS/IMAGES FOLDER -->
-            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfUsZ4hwJcL7g53YDvGk52M49xEbRW6etmQ&usqp=CAU" alt="LOGO" width="40px" height="40px">
+            <img class="logo" src="css/assets/images/logo.jpeg" alt="LOGO" >
 
-            <nav class="navbar"> <!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger. Ovde ne mogu da stavim height 40px za hamburger jer probija headre i spusta kroz main, zato sam to iybacio kao uslov.  -->
+            <nav> <!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger. Ovde ne mogu da stavim height 40px za hamburger jer probija headre i spusta kroz main, zato sam to iybacio kao uslov.  -->
                 <a href="javascript:;" class="humburger-bars" onclick="humburger()">
                     <!-- OVDE LOGIKA ZA HUMBURGER -->
+                    <div class="humburger-bars">
+                        <li></li> 
+                        <li></li> 
+                        <li></li> 
+                    </div>
                 </a>
                 <div>
                     <ul class="navbar-links" id="nav-links">
                         <!-- Otvorena lista se lepi uz header na donju ivicu headera i desnu ivicu ekrana i siroka je koliko najduzi link, background color = #CCEEBC -->
                         <!-- siroka je koliko najduzi link -->
+
+                         <!-- OVDE MI JE LAKSE DA STAVIM navbar-links li klasu nema potrebe nav-item -->
+
                         <li class="nav-item"><!-- na hover dobijaju background color #FFF  -->
-                            <a href="javascript:;" class="nav-link">Link kratak</a>
+                            <a href="javascript:;" class="nav-link">Link kratak</a>  <!-- OVDE MI JE LAKSE DA STAVIM navbar-links li a klasu nema potrebe nav-link -->
                             <!-- linkovi nemaju underline, font-size = 14px, line-height = 16px, color = #00337C-->
                         </li>
 
@@ -125,17 +44,14 @@
                         </li>
                     </ul>
                 </div>
-            </nav> <!-- Iskreno nije mi jasan sada ovaj nav, jer hamburger je u njemu a u stvari je u hederu, jedino zbog responsiva ako nisi mislio, mogao sam i bez nava, ali ako je zbog responsiva onda ok -->
+            </nav> <!-- Zasto ne stavimo nav ispod hedera i cao, ovako mi se cini da komplikujemo -->
         </div>
     </header>
     <main class="container">
         <section class="hero-section"> <!-- Hero section, height = auto, width - 100% -->
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgyq9XkQEbxhsVPcMUdfeotQUH7F5p0L8JmA&usqp=CAU"
-                alt="Hero slika" width="1200px" height="630px"> <!-- naci neku sliku 1200x630 -->
-            <div class="hero-heading">
-                <h1>Glavni naslov na stranici</h1>
-                <!-- Naslov ide po sredini slike, color = #fff , font-size = 24px, line-height = 28px -->
-            </div>
+                <img src="css/assets/images/macka.jpg" alt="Hero slika" width="auto" height="auto">
+                <h1 class="hero-heading">Glavni naslov na stranici</h1> <!-- naci neku sliku 1200x630 -->
+                 <!-- Naslov ide po sredini slike, color = #fff , font-size = 24px, line-height = 28px -->
         </section>
 
         <section>
@@ -295,7 +211,7 @@
 
     <script>
         function humburger() {
-            var x = document.getElementById("myLinks");
+            var x = document.getElementById("nav-links");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {

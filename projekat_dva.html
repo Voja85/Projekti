@@ -4,101 +4,9 @@
         <title>Mobile first stilizovanje stranice</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- OVDE POSTAVITI STILOVE KOJI SU POTREBNI-->
-        <style>
-
-            .clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            header {
-                height: 60px;
-                text-align: center;
-                padding-top: 9px;
-            }
-
-            nav {
-                display: inline;
-            }
-
-            body {
-                width: 100%;
-                text-align: justify;
-                margin: 0;
-                background-color: #FAF0D7;
-                font-size: 12px;
-                line-height: 14px;
-            }
-            
-            main {
-                
-            }
-  
-            .container {
-                position: absolute;
-                display: none;
-                top:48px;
-                width: 220px;
-                right: 0px;
-                list-style-type: none;
-                z-index: 1;
-            }
-
-            .container li {
-                display: block;
-                height: 30px;
-                background-color: #CCEEBC;
-                text-align: justify;
-                padding-left:5px;
-                padding-top: 5px;
-            }
-
-            .container li a { 
-                position: absolute;
-                text-decoration: none;
-                color: #00337C;
-                line-height: 16px;
-                font-size: 14px;
-                margin:0px;
-            }
-
-            .container li:hover { 
-                background-color: #FFF;    
-            }
-            .icon {
-                width: 40px;
-                float: right;
-                font-size: 20px;
-                padding-top: 7px;
-            }
-            .class {
-                position: relative;
-                width: auto;
-            }
-            
-            .class_text {
-                position: absolute;
-                text-align: center;
-                font-size: 24px;
-                color: #fff;
-                line-height: 28px;
-                top: 40%;
-            }
-
-            section {
-                height: auto;
-                width: 100%;
-            }
-            
-            
-        </style>           
+        <!-- OVDE POSTAVITI STILOVE KOJI SU POTREBNI-->         
         
     </head>
 
@@ -107,9 +15,9 @@
         <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfUsZ4hwJcL7g53YDvGk52M49xEbRW6etmQ&usqp=CAU" alt="LOGO" width="40px" height="40px">
 
         <nav> <!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger. Ovde ne mogu da stavim height 40px za hamburger 
-                   jer probija headre i spusta kroz main, zato sam to iybacio kao uslov.  -->
+                   jer probija headre i spusta kroz main, zato sam to izbacio kao uslov.  -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i></a>
                 <div class="container1">
                     <ul class="container" id="myLinks"> <!-- Otvorena lista se lepi uz header na donju ivicu headera i desnu ivicu ekrana i siroka je koliko najduzi link, background color = #CCEEBC -->
                                                     <!-- siroka je koliko najduzi link -->
@@ -122,7 +30,7 @@
                         </li>
 
                         <li>
-                        <a href="javascript:;" style="display: inline;">Link dugacak text linka</a>
+                        <a href="javascript:;" style="display: inline;">Link dugacak text linka linka </a>
                         </li>
                     </ul>
                 </div>
