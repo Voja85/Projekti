@@ -29,7 +29,6 @@ nav {
     display:inline;
 }
 
-
 .navbar-links {
     position: absolute;
     display: none;
@@ -39,7 +38,6 @@ nav {
     list-style-type: none;
     z-index: 1;
 }
-
 
 .navbar-links li {  
     display: block;
@@ -77,6 +75,7 @@ nav {
     border-radius: 2px;
     cursor: pointer;
 }
+
 .container {
     position: relative;
     width: auto;
