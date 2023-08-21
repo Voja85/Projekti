@@ -18,9 +18,10 @@
                 <a href="javascript:;" class="humburger-bars" onclick="humburger()">
                     <!-- OVDE LOGIKA ZA HUMBURGER -->
                     <div class="humburger-bars">
-                        <li></li> 
-                        <li></li> 
-                        <li></li> 
+                        <!-- NE MOGU DA BUDU LI TAGOVI VAN UL TAGA -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </a>
                 <div>
@@ -29,7 +30,6 @@
                         <!-- siroka je koliko najduzi link -->
 
                          <!-- OVDE MI JE LAKSE DA STAVIM navbar-links li klasu nema potrebe nav-item -->
-
                         <li class="nav-item"><!-- na hover dobijaju background color #FFF  -->
                             <a href="javascript:;" class="nav-link">Link kratak</a>  <!-- OVDE MI JE LAKSE DA STAVIM navbar-links li a klasu nema potrebe nav-link -->
                             <!-- linkovi nemaju underline, font-size = 14px, line-height = 16px, color = #00337C-->
@@ -44,21 +44,21 @@
                         </li>
                     </ul>
                 </div>
-            </nav> <!-- Zasto ne stavimo nav ispod hedera i cao, ovako mi se cini da komplikujemo -->
+            </nav> <!-- Zasto ne stavimo nav ispod hedera i cao, ovako mi se cini da komplikujemo --><!-- ZATO :D -->
         </div>
     </header>
     <main class="container">
         <section class="hero-section"> <!-- Hero section, height = auto, width - 100% -->
-                <img src="css/assets/images/macka.jpg" alt="Hero slika" width="auto" height="auto">
-                <h1 class="hero-heading">Glavni naslov na stranici</h1> <!-- naci neku sliku 1200x630 -->
-                 <!-- Naslov ide po sredini slike, color = #fff , font-size = 24px, line-height = 28px -->
+            <h1 class="hero-heading">Glavni naslov na stranici</h1> <!-- naci neku sliku 1200x630 -->
+            <!-- Naslov ide po sredini slike, color = #fff , font-size = 24px, line-height = 28px -->
+            <img src="css/assets/images/macka.jpg" alt="Hero slika" width="auto" height="auto">
         </section>
 
-        <section>
-            <h2>
+        <section class="leading-section"><!-- svaka sekcija da ima levi i desni pading 5px, a ova dodatno i gornji 5px, takodje dodati background color da bude gradijent iz gornjeg levog ugla da krene neka svetlo plava a da se u donjem desnom uglu zavrsi neka svetlo crvena -->
+            <h2><!-- font-size = 20px line-height = 24px, centrirano po sredini, padding = 5px -->
                 Pod naslov na stranici
             </h2>
-            <p>
+            <p class="lead"> <!-- svaki p tag na strani da je font-size = 12px, line-height = 14px, color = #606060, a ovaj da je size = 14px height = 16px italic i color = #303030 -->
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -66,18 +66,18 @@
                 deserunt mollit anim id est laborum.
             </p>
         </section>
-        <section>
+        <section class="gallery"> <!-- postaviti joj flex tako da idu po dve slike u redu, ako je neparan broj slika u redu postaviti da ta slika ide po centru -->
             <img src="" alt="Slika 1">
             <img src="" alt="Slika 2">
             <img src="" alt="Slika 3">
             <img src="" alt="Slika 4">
             <img src="" alt="Slika 5">
         </section>
-        <section>
+        <section> <!-- dodati border top i bottom crne boje sa opacity = 0.5, dugmice postaviti levo i desno (sa justify-content i sa flex-om)-->
             <button>CTA dugme</button>
             <button>CTA dugme 2</button>
         </section>
-        <section>
+        <section><!-- padding 5px, sa p tagovima se ovde malo poigrati italic | bold | underline | sta god mozes da nadjes da je zanimljivo, slobodno dodavati p tagove sa sadrzajem razlicite duzine po potrebi -->
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -93,7 +93,7 @@
                 deserunt mollit anim id est laborum.
             </p>
         </section>
-        <section>
+        <section><!-- naci cetiri slike sa istim aspect ratiom (600x900) i postaviti ih da izgledaju kao da ih drzis u ruci kao karte -->
             <img src="" alt="Slika 1">
             <img src="" alt="Slika 2">
             <img src="" alt="Slika 3">
