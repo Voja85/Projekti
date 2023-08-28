@@ -15,7 +15,7 @@
             <img class="logo" src="css/assets/images/logo.jpeg" alt="LOGO" >
 
             <nav> <!-- Hamburger gde klikom na njega se otvara ispod padajuci meni sa linkovima, 40x40px, ako treba dodati odgovarajuci html da bi se napravio hamburger. Ovde ne mogu da stavim height 40px za hamburger jer probija headre i spusta kroz main, zato sam to iybacio kao uslov.  -->
-                <a href="javascript:;" class="humburger-bars" onclick="humburger()">
+                <a href="javascript:;"class="humburger-bars" onclick="humburger()">
                     <!-- OVDE LOGIKA ZA HUMBURGER -->
                     <div class="humburger-bars">
                         <!-- NE MOGU DA BUDU LI TAGOVI VAN UL TAGA -->
@@ -55,7 +55,7 @@
         </section>
 
         <section class="leading-section"><!-- svaka sekcija da ima levi i desni pading 5px, a ova dodatno i gornji 5px, takodje dodati background color da bude gradijent iz gornjeg levog ugla da krene neka svetlo plava a da se u donjem desnom uglu zavrsi neka svetlo crvena -->
-            <h2><!-- font-size = 20px line-height = 24px, centrirano po sredini, padding = 5px -->
+            <h2 class="h2-heading"><!-- font-size = 20px line-height = 24px, centrirano po sredini, padding = 5px -->
                 Pod naslov na stranici
             </h2>
             <p class="lead"> <!-- svaki p tag na strani da je font-size = 12px, line-height = 14px, color = #606060, a ovaj da je size = 14px height = 16px italic i color = #303030 -->
@@ -67,39 +67,42 @@
             </p>
         </section>
         <section class="gallery"> <!-- postaviti joj flex tako da idu po dve slike u redu, ako je neparan broj slika u redu postaviti da ta slika ide po centru -->
-            <img src="" alt="Slika 1">
-            <img src="" alt="Slika 2">
-            <img src="" alt="Slika 3">
-            <img src="" alt="Slika 4">
-            <img src="" alt="Slika 5">
+                <img src="css/assets/images/macka.jpg" alt="Slika 1">
+                <img src="css/assets/images/macka.jpg" alt="Slika 2">
+                <img src="css/assets/images/macka.jpg" alt="Slika 3">
+                <img src="css/assets/images/macka.jpg" alt="Slika 4">
+                <img src="css/assets/images/macka.jpg" alt="Slika 5">
         </section>
-        <section> <!-- dodati border top i bottom crne boje sa opacity = 0.5, dugmice postaviti levo i desno (sa justify-content i sa flex-om)-->
+        <section class="buttons"> <!-- dodati border top i bottom crne boje sa opacity = 0.5, dugmice postaviti levo i desno (sa justify-content i sa flex-om)-->
             <button>CTA dugme</button>
             <button>CTA dugme 2</button>
         </section>
         <section><!-- padding 5px, sa p tagovima se ovde malo poigrati italic | bold | underline | sta god mozes da nadjes da je zanimljivo, slobodno dodavati p tagove sa sadrzajem razlicite duzine po potrebi -->
-            <p>
+            <p class="styles">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
             </p>
-            <p>
+            <p class="shadow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
             </p>
+            <p class="thickness">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            </p>
+
         </section>
-        <section><!-- naci cetiri slike sa istim aspect ratiom (600x900) i postaviti ih da izgledaju kao da ih drzis u ruci kao karte -->
-            <img src="" alt="Slika 1">
-            <img src="" alt="Slika 2">
-            <img src="" alt="Slika 3">
-            <img src="" alt="Slika 4">
+        <section class="cards"><!-- naci cetiri slike sa istim aspect ratiom (600x900) i postaviti ih da izgledaju kao da ih drzis u ruci kao karte -->
+            <img src="css/assets/images/karta.jpg" style="transform: rotate(-30deg); transform-origin: right;" alt="Slika 1">
+            <img src="css/assets/images/karta.jpg" style="transform: rotate(-15deg);" alt="Slika 2">
+            <img src="css/assets/images/karta.jpg" style="transform: rotate( 15deg);" alt="Slika 3">
+            <img src="css/assets/images/karta.jpg" style="transform: rotate( 30deg); transform-origin: left;" alt="Slika 4">
+            
         </section>
-        <section>
+        <section style="overflow: auto">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip

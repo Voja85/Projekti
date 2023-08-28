@@ -44,10 +44,8 @@ nav {
     height: 30px;
     background-color: #CCEEBC;
     text-align: justify;
-    /* OVO ISPOD MOZE I U JEDNOJ LINIJI */
-    padding-left:5px;
-    padding-right:5px;
-    padding-top: 5px;
+    /* OVO ISPOD MOZE I U JEDNOJ LINIJI */   /* RAZUMEM SEFE */
+    padding:5px 5px 0px 5px;
 }
 
 .navbar-links .nav-item .nav-link { 
@@ -91,6 +89,8 @@ nav {
     width: 100%;
     height: auto;
     border: 1px solid blue;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .hero-heading {
@@ -103,3 +103,92 @@ nav {
     color: #fff;
     line-height: 28px;
 }
+
+section {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.leading-section {
+    padding-top: 5px;
+    background-image: linear-gradient(to bottom right,  rgb(118, 105, 240), rgb(243, 84, 84));
+}
+
+.h2-heading {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #606060;
+}
+
+.lead {
+    font-size: 14px;
+    line-height: 16px;
+    color: #303030;
+    font-style: italic;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.gallery img {  
+    max-width: 50%;
+    margin: 0;
+
+}
+
+.buttons {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    opacity: 0.5 ;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.styles {
+    font-style: italic;
+    color:blue;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+.shadow {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.thickness {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(27, 209, 133);  
+    text-decoration-thickness: 6px;  
+}
+
+.cards {
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cards img {
+    border-radius: 10px;
+    max-width: 20%;
+}
+
+
+
