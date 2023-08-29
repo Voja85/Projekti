@@ -121,7 +121,7 @@ section {
     text-align: center;
 }
 
-p {
+p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti malo stilski sta bi trebalo popraviti kako bi izgled strane izgledao bolji */
     font-size: 12px;
     line-height: 14px;
     color: #606060;
@@ -145,7 +145,6 @@ p {
 .gallery img {  
     max-width: 50%;
     margin: 0;
-
 }
 
 .buttons {
@@ -186,7 +185,7 @@ p {
 }
 
 .cards img {
-    border-radius: 10px;
+    border-radius: 10px; /* OVO TI JE ODLICNO, SVAKA CAST*/
     max-width: 20%;
 }
 
