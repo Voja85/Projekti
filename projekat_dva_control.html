@@ -67,7 +67,7 @@
             </p>
         </section>
         <section class="gallery"> <!-- postaviti joj flex tako da idu po dve slike u redu, ako je neparan broj slika u redu postaviti da ta slika ide po centru -->
-            <!-- Dodati mali razmak izmedju slika -->
+            <!-- Dodati mali razmak izmedju slika --><!-- A OVO-->
                 <img src="css/assets/images/macka.jpg" alt="Slika 1">
                 <img src="css/assets/images/macka.jpg" alt="Slika 2">
                 <img src="css/assets/images/macka.jpg" alt="Slika 3">
@@ -75,8 +75,9 @@
                 <img src="css/assets/images/macka.jpg" alt="Slika 5">
         </section>
         <section class="buttons"> <!-- dodati border top i bottom crne boje sa opacity = 0.5, dugmice postaviti levo i desno (sa justify-content i sa flex-om)-->
-            <button>CTA dugme</button>
-            <button>CTA dugme 2</button>
+            <!-- svi dugmici da imaju font-size:16px, line-height: 18px, padding: 5px, text unutar njih centriran po sredini -->
+            <button>CTA dugme</button><!-- success button background-color - svetlija nijansa zelene, border-color - tamnija nijansa zelene, a na hover da border i background color zamene vrednosti  -->
+            <button>CTA dugme 2</button><!-- error button background-color - svetlija nijansa crvene, border-color - tamnija nijansa crvene, a na hover da border i background color zamene vrednosti  -->
         </section>
         <section><!-- padding 5px, sa p tagovima se ovde malo poigrati italic | bold | underline | sta god mozes da nadjes da je zanimljivo, slobodno dodavati p tagove sa sadrzajem razlicite duzine po potrebi -->
             <p class="colouring"><!-- ime klase "styles", REALNO? :D malo kreativnije molim te -->
@@ -103,38 +104,39 @@
             <img src="css/assets/images/karta.jpg" class="card_3"  alt="Slika 3"><!-- inline stilove prebaciti u css fajl -->
             <img src="css/assets/images/karta.jpg" class="card_4"  alt="Slika 4"><!-- inline stilove prebaciti u css fajl -->
         </section>
-        <section>
-            <p>
+        <section><!-- dodati padding gore i dole :5px -->
+            <p><!-- probati namestiti da text "pulsira" odnosno da menja opaciti od 0.5 do 1 i nazad sa periodom ponavljanja od 2 sekunde -->
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <ol>
+            <ol> <!-- Lista treba biti na centru ekrana ali li trebaju da budu poravnati levo, stilizovati redne brojeve u listi (svaki parni da je neka nijansa plave, a svaki neparni neka nijansa narandzaste)-->
+                <!-- svaki li na hover da ode u desno za 10px -->
                 <li>Neki tekst</li>
                 <li>Opet neki tekst</li>
                 <li>I tako dalje neki tekst</li>
             </ol>
-            <p>
+            <p><!-- Centriran po sredini ali da se rotira po vertikalnoj osi i da obrne ceo krug za 4 sekunde -->
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <table>
+            <table><!-- malo izguglati tabelarni prikaz, odnosno stilizovanje tabela, samo kroz css -->
                 <thead>
                     <tr>
-                        <th>slika</th>
-                        <th>cena</th>
+                        <th>slika</th><!-- centrirano po sredini kako header tako i body -->
+                        <th>cena</th><!-- centrirano po sredini kako header tako i body -->
                         <th>opis</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <img src="" alt="slika proizvoda">
+                            <img src="" alt="slika proizvoda"><!-- slika da bude se prikazuje uvek okrugla, bez obzira na njene dimenzije, i da ima precnik 40px -->
                         </td>
                         <td>1999,99RSD</td>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
@@ -163,8 +165,8 @@
                 </tbody>
             </table>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+            <ul><!-- stilizovati listu po nekom tvom nahodjenju da izgleda malo zanimljivo, baci neku kreaciju :D, jedino sto je "obavezno" tacke ne treba da postoje -->
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li><!-- poigraj se malo sa stilovima za ove li-eve -->
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
             </ul>
