@@ -145,6 +145,7 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 .gallery img {  
     max-width: 50%;
     margin: 0;
+    padding: 2px;
 }
 
 .buttons {
@@ -215,4 +216,90 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
     position: absolute; 
     left: 49%;
     transform: rotate(35deg);
+}
+
+.center-section {
+    padding: 5px 5px;
+    width: 100%;
+}
+
+.text-puls {
+    margin: 0;
+    animation-name: opacity-text;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes opacity-text {
+    from {opacity: 0.5; color: red;}
+    to {opacity: 1; color: green;}
+  }
+
+.list {
+   padding-left: 50%;
+}
+
+.list li:nth-child(1n)::marker {
+    color: rgba(233, 158, 20, 0.945);
+ }
+
+.list li:nth-child(2n)::marker {
+    color: rgb(88, 86, 211);
+ }
+
+.list li:hover {
+    transform:translateX(10px);
+}
+
+.rotation {
+    animation-name: rotation-text;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation-text {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg)}
+  }
+
+th {
+    border: 1px solid black;
+    text-align: center;
+  }
+
+td { 
+    border: 1px solid black;
+    text-align: center;
+  }
+
+.th-no-center {
+    text-align: left;
+}
+
+.paint {
+    text-align: center;
+    background-color: chartreuse;
+  }
+
+.paint-th {
+    background-color: chartreuse;
+    text-align: left;
+}  
+
+.rounded {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.list-infrastructure {
+    list-style-type: "\1F44D";
+    background: #3399ff;
+    padding-left: 15px;
+}
+
+.list-infrastructure li {
+    background: #cce5ff;
 }
