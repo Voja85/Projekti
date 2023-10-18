@@ -225,19 +225,30 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 
 .text-puls {
     margin: 0;
-    animation-name: opacity-text;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: opacity-text 2s infinite linear;
 }
 
 @keyframes opacity-text {
-    from {opacity: 0.5; color: red;}
-    to {opacity: 1; color: green;}
+    0% {
+        color: red;
+        opacity: 0.5;
+      }
+
+    50% {
+        color: green;
+        opacity: 1;
+      }
+
+    100% {
+        color: red;
+        opacity: 0.5;
+      }
+      
   }
 
 .list {
-   padding-left: 50%;
+
+   padding-left: 30%;
 }
 
 .list li:nth-child(1n)::marker {
@@ -257,6 +268,7 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  
 }
 
 @keyframes rotation-text {
@@ -264,29 +276,75 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
     to {transform: rotateY(360deg)}
   }
 
+.center {
+    border-collapse: collapse;
+}
+
+.paint {
+    animation-name: rotation-th;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation-th{
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(360deg)}
+  }
+
+.paint-th {
+    animation-name: rotation-th;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation-th{
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(360deg)}
+  }
+
+.center tr:nth-child(odd) {
+    background-image: linear-gradient(to bottom right,  rgb(118, 105, 240), rgb(243, 84, 84))
+}
+
+.center tr:nth-child(even) {
+    margin: 0;
+    animation: opacity-background 3s infinite linear;
+}
+
+@keyframes opacity-background {
+    0% {
+        background-color: rgb(13, 207, 126);
+        opacity: 0.5;
+      }
+
+    50% {
+        background-color: rgb(134, 14, 233);
+        opacity: 1;
+      }
+
+    100% {
+        background-color: rgb(13, 207, 126);
+        opacity: 0.5;
+      }
+  }
+
 th {
     border: 1px solid black;
     text-align: center;
+    background-color: chartreuse;
   }
 
 td { 
     border: 1px solid black;
     text-align: center;
+    padding: 3px;
   }
 
 .th-no-center {
-    text-align: left;
-}
-
-.paint {
     text-align: center;
-    background-color: chartreuse;
-  }
-
-.paint-th {
-    background-color: chartreuse;
-    text-align: left;
-}  
+}
 
 .rounded {
     border-radius: 50%;
