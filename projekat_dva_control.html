@@ -2,9 +2,13 @@
 <html>
 <head>
     <title>Mobile first stilizovanje stranice</title>
+    <meta name="description" content="prvo stilizovanje za poslove web dizajna...."> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <meta name="keywords" content="web, dizajn, stilizovanje, stranica"> 
     <link rel="stylesheet" href="./css/styles_dva.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- OVO PREBACITI U ZASEBAN CSS FILE-->
 
 </head>
@@ -168,7 +172,7 @@
                         <td>1999,99RSD</td>
                         <td  class="th-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
                     </tr>
-                </tbody>
+                </tbody>     
             </table>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
             <ul class="list-infrastructure"><!-- stilizovati listu po nekom tvom nahodjenju da izgleda malo zanimljivo, baci neku kreaciju :D, jedino sto je "obavezno" tacke ne treba da postoje -->
@@ -179,47 +183,62 @@
         </section>
         <section>
             <form action="">
-                <input type="text">
-                <select name="">
-                    <option value="">Opcija 1</option>
-                    <option value="">Opcija 2</option>
-                    <option value="">Opcija 3</option>
-                </select>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Posalji</button>
+                <input type="text" name="search" placeholder="search here">
+                <div >
+                    <button class="btn-input-text">Submit</button>
+                </div>
+                <div class="custom-select">
+                    <select>
+                        <option value="">Open this select menu</option>
+                        <option value="">Shaomi redmi</option>
+                        <option value="">Sumsung</option>
+                        <option value="">Nokia</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea class="area-comment" name="question" id="question" cols="30" rows="10" placeholder="Unesite text za komentar"></textarea>
+                </div> 
+                <div>
+                    <button class="btn">Posalji</button>
+                </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <section>
+        <section class="main">
             <ul>
-                <li>NEKI LINKOVI</li>
                 <li>
-                    <a href="">Link 1</a>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <br>
+                    <a href="https://facebook.com">Facebook</a>
                 </li>
                 <li>
-                    <a href="">Link 2</a>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <br>
+                    <a href="https://www.instagram.com/">Instagram</a>
                 </li>
                 <li>
-                    <a href="">Link 3</a>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <br>
+                    <a href="https://rs.linkedin.com/">Linkedin</a>
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="contact-form">
             <p>Kontakti</p>
-            <p>telefon</p>
-            <p>adresa</p>
+            <p>Telefon</p>
+            <p>Adresa</p>
             <p>Ime kompanije</p>
             <p>PIB</p>
         </section>
         <section>
-            <img src="" alt="logo">
-            <p>copyright</p>
+            <img class="final-logo" src="css/assets/images/logo.jpeg" alt="logo">
+            <br>
+            <p class="final-text">&copy copyright</p>
         </section>
-        <button>Idi na vrh</button>
+        <button class="back-button" onclick="topFunction()" id="myBtn" title="Idi na vrh">Idi na vrh</button>
     </footer>
-
 
     <script>
         function humburger() {
@@ -233,7 +252,13 @@
     </script>
     <script>
             // Logika za idi na vrh
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
