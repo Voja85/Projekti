@@ -3,11 +3,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-color:#FAF0D7;
+    --red-color:red;
+    --blue-color: blue;
+    --black-color:black;
+    --yellow-color:yellow;
+    --contact-color:#b5cfe9;
+    --green-color:green;
+    --white-color:white;
+}
+
 body {
     width: 100%;
     text-align: justify;
     margin: 0;
-    background-color: #FAF0D7;
+    background-color: var(--body-color);
     font-size: 12px;
     line-height: 14px;
 }
@@ -16,7 +27,7 @@ header {
     height: 60px;
     text-align: center;
     padding-top: 9px;
-    border: 1px solid red;
+    border: 1px solid var(--red-color);
 }
 
 .logo {
@@ -71,7 +82,7 @@ nav {
 .humburger-bars span {
     width: 20px;
     height: 6px;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid var(--black-color);
     border-radius: 2px;
     cursor: pointer;
     display: block;
@@ -88,7 +99,7 @@ nav {
     flex-direction: column;
     width: 100%;
     height: auto;
-    border: 1px solid blue;
+    border: 1px solid var(--blue-color);
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -150,8 +161,8 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 }
 
 .buttons {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
     opacity: 0.5 ;
     display: flex;
     flex-direction: row;
@@ -162,13 +173,13 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
     font-style: italic;
     color:rgb(61, 126, 201);
     text-decoration: line-through;
-    text-decoration-color: red;
+    text-decoration-color: var(--red-color);
     font-weight: bold;
 }
 
 .shadow {
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 1px darkblue;
+    text-shadow: 1px 1px 2px var(--black-color), 0 0 10px var(--blue-color), 0 0 1px darkblue;
 }
 
 .thickness {
@@ -191,7 +202,7 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 }
 
 .card_1 { 
-    border: 1px solid yellow;
+    border: 1px solid var(--yellow-color);
     position: relative; 
     left: 36%;
     transform: rotate(-35deg);
@@ -199,14 +210,14 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 }
 
 .card_2 {
-    border: 1px solid red;
+    border: 1px solid var(--red-color);
     position: absolute; 
     left: 39%;
     transform: rotate(-15deg);
 }
 
 .card_3 {
-    border: 1px solid blue;
+    border: 1px solid var(--blue-color);
     position: absolute; 
     left: 46%;
     transform: rotate(15deg);
@@ -232,23 +243,24 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 
 @keyframes opacity-text {
     0% {
-        color: red;
+        color: var(--red-color);
         opacity: 0.5;
       }
 
     50% {
-        color: green;
+        color: var(--green-color);
         opacity: 1;
       }
 
     100% {
-        color: red;
+        color: var(--red-color);
         opacity: 0.5;
       }
 }
 
 /*              Red brojeva
          sa  uvlacenjem udesno   */ 
+
 .list {
     transform: translate(50%, 0%);
     padding: 0;
@@ -298,7 +310,7 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 @keyframes rotation-th{
     from {transform: rotateX(0deg);}
     to {transform: rotateX(360deg)}
-  }
+}
 
 .paint-th {
     animation-name: rotation-th;
@@ -310,7 +322,7 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 @keyframes rotation-th{
     from {transform: rotateX(0deg);}
     to {transform: rotateX(360deg)}
-  }
+}
 
 .center tr:nth-child(odd) {
     background-image: linear-gradient(to bottom right,  rgb(118, 105, 240), rgb(243, 84, 84))
@@ -339,16 +351,16 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
 }
 
 th {
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     text-align: center;
     background-color: chartreuse;
-  }
+}
 
 td { 
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     text-align: center;
     padding: 3px;
-  }
+}
 
 .th-no-center {
     text-align: center;
@@ -370,10 +382,6 @@ td {
     background: #cce5ff;
 }
 
-.custom-select {
-    
-}
-
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
@@ -381,7 +389,7 @@ input[type=text] {
     border-radius: 4px;
     font-size: 12px;
     font-style: italic;
-    background-color: white;
+    background-color: var(--white-color);
     background-repeat: no-repeat;
     padding: 2px 10px;
     margin-bottom: 10px;
@@ -431,7 +439,7 @@ textarea:focus {
 
 .btn {
     width: 100%;
-    color: black;
+    color: var(--black-color);
     background-color:#8fbbe7;
     border-radius: 5px;
     cursor: pointer;
@@ -465,7 +473,7 @@ footer {
 .main ul li a {
     text-decoration: none; 
     font-size: 14px;
-    color: black; 
+    color: var(--black-color); 
   }
 
 .main ul li a:hover {
@@ -485,19 +493,20 @@ footer {
     background-color: rgb(238, 235, 217);
     width: 100%;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     border-radius: 5px;
     text-align: center;
     align-items:end;
     margin: 5px 0;
     padding-top: 11px;
     cursor: pointer;
-    color: black;
+    color: var(--black-color);
 }
 
 .contact-form p:hover {
-    background-color: #b5cfe9;
-  }
+    background-color: var(--contact-color);
+    text-decoration:underline 2px  solid black ;
+}
 
     /* Logo */
 
@@ -517,7 +526,7 @@ footer {
 }
 
 .final-text {
-    color: black;
+    color: var(--black-color);
 }
 
 .back-button {   
@@ -533,7 +542,7 @@ footer {
   /* Responsive */
 
 
-  @media screen and (min-width: 700px) {    
+@media screen and (min-width: 700px) {    
     
     .cards {
         margin-bottom: 20px;
