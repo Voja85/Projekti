@@ -21,6 +21,7 @@ body {
     background-color: var(--body-color);
     font-size: 12px;
     line-height: 14px;
+    overflow-x: hidden;
 }
 
 header {
@@ -496,7 +497,6 @@ footer {
     border: 1px solid var(--black-color);
     border-radius: 5px;
     text-align: center;
-    align-items:end;
     margin: 5px 0;
     padding-top: 11px;
     cursor: pointer;
@@ -510,7 +510,8 @@ footer {
 
     /* Logo */
 
-.final-logo {   
+.final-logo { 
+    display: inline-block;  
     width: 50px;
     height:50px;
     display: flex;
@@ -553,8 +554,8 @@ footer {
     }
   }
 
-@media screen and (min-width: 500px) {    
-    
+@media screen and (min-width: 500px) {   
+
     .center {
         width: 100%;
     }
@@ -563,6 +564,21 @@ footer {
         margin-top: 10px;
     }
     
+    .contact-form {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 100px;
+        gap: 10px;
+        margin-bottom: 130px;
+    }
+
+    .contact-form p {
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        padding-top: 40px;
+    }
 }
 
         /*     Red brojeva
