@@ -554,7 +554,27 @@ footer {
     }
   }
 
-@media screen and (min-width: 500px) {   
+  @media screen and (min-width: 901px) and (max-width: 1500px) {
+
+    .center {
+        width: 100%;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      height: 100px;
+      gap: 10px;
+      margin-bottom: 130px; }
+
+    .contact-form p {
+      height: 100px;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      padding-top: 40px; } }
+
+@media screen and (min-width: 500px) and (max-width: 900px) {   
 
     .center {
         width: 100%;
