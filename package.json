@@ -1,0 +1,22 @@
+{
+  "name": "projekti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voja85/Projekti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voja85/Projekti/issues"
+  },
+  "homepage": "https://github.com/Voja85/Projekti#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
