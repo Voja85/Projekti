@@ -1,0 +1,67 @@
+header {
+    height: 60px;
+    text-align: center;
+    padding-top: 9px;
+    border: 1px solid $redColor;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;  
+    margin-left: 40px;
+}
+
+nav {
+    display:inline;
+
+    .navbar-links {
+        position: absolute;
+        display: none;
+        top:38px;
+        width: auto;
+        right: 0px;
+        list-style-type: none;
+        z-index: 1;
+    }
+
+        .nav-item {           /* ov je vec podgrana .navbar-links u sass zato je nisam jos skratio */
+            display: block;
+            height: 30px;
+            background-color: #CCEEBC;
+            text-align: justify;
+            /* OVO ISPOD MOZE I U JEDNOJ LINIJI */   /* RAZUMEM SEFE */
+            padding:5px 5px 0px 5px;
+        }
+
+        .nav-item .nav-link { 
+            text-decoration: none;
+            color: #00337C;
+            line-height: 16px;
+            font-size: 14px;
+            margin:0px;
+        }
+    
+    li:hover { 
+    background-color: #FFF;    
+    }
+
+    .humburger {
+
+        &-bars {
+            float: right;
+            margin-right: 5px;
+            list-style: none;
+            padding-top: 5px;
+            cursor: pointer;
+        }
+
+        &-bars span {
+            width: 20px;
+            height: 6px;
+            border-bottom: 4px solid $blackColor;
+            border-radius: 2px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+}

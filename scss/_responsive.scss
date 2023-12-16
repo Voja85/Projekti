@@ -1,0 +1,131 @@
+ 
+ /* Responsive */
+
+ @media screen and (min-width: 700px) {    
+    
+    .cards {
+        margin-bottom: 20px;
+    }
+    
+    .list {
+        margin-top: 10px;
+    }
+  }
+
+@media screen and (min-width: 901px) and (max-width: 1600px) {
+
+    .center {
+        width: 100%;
+    }
+
+    .contact{
+
+        &-form {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            height: 100px;
+            gap: 10px;
+            margin-bottom: 130px; 
+        }
+
+        &-form p {
+            height: 100px;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {   
+
+    .center {
+        width: 100%;
+    }
+
+    .list {
+        margin-top: 10px;
+    }
+    
+    .contact {
+    
+        &-form {
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 100px;
+            gap: 10px;
+            margin-bottom: 130px;
+        }
+
+        &-form p {
+            height: 100px;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
+
+        /*     Red brojeva
+         sa  uvlacenjem udesno   */ 
+
+@media screen and (min-width: 300px) and (max-width: 499px){    
+    
+    .list {
+        transform: translate(30%, 0%);
+        margin-top:0;
+        margin-bottom: 10px;
+    }
+      
+        /*Linkovi*/
+
+    .footer-icon ul li {
+        padding: 0px 10px;
+      }
+}
+      
+        /*Linkovi*/
+
+@media screen and (min-width:200px) and (max-width: 299px) {    
+    
+    .footer-icon {
+        
+        ul li {
+            padding: 0px 5px;
+        }
+
+        ul li a {
+            font-size: 12px;
+        }
+    
+        ul li a:hover {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 199px) {    
+
+    .footer-icon {
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li {
+            padding: 5px 5px;
+            margin: 0px 0px;
+        }
+    
+        ul li a {
+            font-size: 11px;
+        }
+        
+        ul li a:hover {
+            font-size: 14px;
+        }
+    }
+}
