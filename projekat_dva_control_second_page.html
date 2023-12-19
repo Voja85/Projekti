@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile first stilizovanje stranice</title>
+    <meta name="description" content="prvo stilizovanje za poslove web dizajna...."> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="web, dizajn, stilizovanje, stranica"> 
+    <script src="https://kit.fontawesome.com/167c1a4d0b.js" crossorigin="anonymous"></script>
+
+
+    <!-- OVO PREBACITI U ZASEBAN CSS FILE-->
+
+</head>
+<body> <!--  Sirina sadrzaja 100%, background color = #FAF0D7, font-size = 12px, line-height 14px -->
+    <main class="container">
+        <section class="hero-section"> <!-- Hero section, height = auto, width - 100% -->
+            <h1 class="hero-heading">Glavni naslov na stranici</h1> <!-- naci neku sliku 1200x630 -->
+            <!-- Naslov ide po sredini slike, color = #fff , font-size = 24px, line-height = 28px -->
+            <img src="css/assets/images/macka.jpg" alt="Hero slika" width="auto" height="auto">
+        </section>
+
+        <section class="leading-section"><!-- svaka sekcija da ima levi i desni pading 5px, a ova dodatno i gornji 5px, takodje dodati background color da bude gradijent iz gornjeg levog ugla da krene neka svetlo plava a da se u donjem desnom uglu zavrsi neka svetlo crvena -->
+            <h2 class="h2-heading"><!-- font-size = 20px line-height = 24px, centrirano po sredini, padding = 5px -->
+                Pod naslov na stranici
+            </h2>
+            <p class="lead"> <!-- svaki p tag na strani da je font-size = 12px, line-height = 14px, color = #606060, a ovaj da je size = 14px height = 16px italic i color = #303030 -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </section>
+        <section class="gallery"> <!-- postaviti joj flex tako da idu po dve slike u redu, ako je neparan broj slika u redu postaviti da ta slika ide po centru -->
+            <!-- Dodati mali razmak izmedju slika --><!-- A OVO-->
+                <img src="css/assets/images/macka.jpg" alt="Slika 1">
+                <img src="css/assets/images/macka.jpg" alt="Slika 2">
+                <img src="css/assets/images/macka.jpg" alt="Slika 3">
+                <img src="css/assets/images/macka.jpg" alt="Slika 4">
+                <img src="css/assets/images/macka.jpg" alt="Slika 5">
+        </section>
+        <section class="buttons"> <!-- dodati border top i bottom crne boje sa opacity = 0.5, dugmice postaviti levo i desno (sa justify-content i sa flex-om)-->
+            <!-- svi dugmici da imaju font-size:16px, line-height: 18px, padding: 5px, text unutar njih centriran po sredini -->
+            <button>CTA dugme</button><!-- success button background-color - svetlija nijansa zelene, border-color - tamnija nijansa zelene, a na hover da border i background color zamene vrednosti  -->
+            <button>CTA dugme 2</button><!-- error button background-color - svetlija nijansa crvene, border-color - tamnija nijansa crvene, a na hover da border i background color zamene vrednosti  -->
+        </section>
+        <section><!-- padding 5px, sa p tagovima se ovde malo poigrati italic | bold | underline | sta god mozes da nadjes da je zanimljivo, slobodno dodavati p tagove sa sadrzajem razlicite duzine po potrebi -->
+            <p class="colouring"><!-- ime klase "styles", REALNO? :D malo kreativnije molim te -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            </p>
+            <p class="shadow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            </p>
+            <p class="thickness">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            </p>
+
+        </section>
+        <section class="cards"><!-- naci cetiri slike sa istim aspect ratiom (600x900) i postaviti ih da izgledaju kao da ih drzis u ruci kao karte -->
+            <!-- SLIKE IZLAZE IZ SEKCIJE, moraju da ostanu unutar sekcije nekako, takodje sve slike moraju da imaju istu sredisnju tacku na dnu, kao lepeza -->
+            <img src="css/assets/images/karta.jpg" class="card_1"  alt="Slika 1"><!-- inline stilove prebaciti u css fajl -->
+            <img src="css/assets/images/karta.jpg" class="card_2"  alt="Slika 2"><!-- inline stilove prebaciti u css fajl -->
+            <img src="css/assets/images/karta.jpg" class="card_3"  alt="Slika 3"><!-- inline stilove prebaciti u css fajl -->
+            <img src="css/assets/images/karta.jpg" class="card_4"  alt="Slika 4"><!-- inline stilove prebaciti u css fajl -->
+        </section>
+        <section class="center-section"><!-- dodati padding gore i dole :5px -->
+            <p class="text-puls"><!-- probati namestiti da text "pulsira" odnosno da menja opaciti od 0.5 do 1 i nazad sa periodom ponavljanja od 2 sekunde -->
+                <!-- PULSIRANJE TI MALO STUCA (ODNOSNO NEIDE GLATKO IZ JEDNOG STANJA U DRUGO), PROBAJ TO MALO DRUGACIJE -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <ol class="list"> <!-- Lista treba biti na centru ekrana ali li trebaju da budu poravnati levo, stilizovati redne brojeve u listi (svaki parni da je neka nijansa plave, a svaki neparni neka nijansa narandzaste)-->
+                <!-- svaki li na hover da ode u desno za 10px -->
+                <!-- LISTA NE TREBA DA POCNE OD SREDINE, VEC DA BUDE NA SREDINI -->
+                <li>Neki tekst</li>
+                <li>Opet neki tekst</li>
+                <li>I tako dalje neki tekst</li>
+                <li>I tako dalje neki tekst</li>
+            </ol>
+            <p class="rotation"><!-- Centriran po sredini ali da se rotira po vertikalnoj osi i da obrne ceo krug za 4 sekunde -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <table class="center"><!-- malo izguglati tabelarni prikaz, odnosno stilizovanje tabela, samo kroz css -->
+                <!-- POSKLANJATI OVE SILNE CRNE DUPLE BORDER-e, DA VISE LICI KAO EXCEL TABELA, dodatno stilizovati ako treba -->
+                <!-- UZETI ZA SVAKI RED DRUGACIJU SLIKU, ODNOSNO SA RAZLICITIM ASPECT RATIO (width prema height) npr.(1:1, 16:9, 9:16), nemoj ovde da mi krivinaris :D -->
+                <!-- SlOBODNO UBACI MALO NEKE PADINGE U OVE CELIJE DA NIJE BAS SLEPLJENO UZ IVICU, pronadji neki lep primer tabele, malo je oboji, header kolone, body celije, daj mu ga malo po kreaciji  -->
+                <thead>
+                    <tr>
+                        <th class="paint">slika</th><!-- centrirano po sredini kako header tako i body -->
+                        <th class="paint" style="animation-duration: 3s;">cena</th><!-- centrirano po sredini kako header tako i body -->
+                        <th class="paint-th">opis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img class="rounded" src="css/assets/images/macka.jpg" alt="slika proizvoda"><!-- slika da bude se prikazuje uvek okrugla, bez obzira na njene dimenzije, i da ima precnik 40px -->
+                        </td>
+                        <td>1999,99RSD</td>
+                        <td class="th-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="rounded" src="css/assets/images/cipovi.jpeg" alt="slika proizvoda">
+                        </td>
+                        <td>1999,99RSD</td>
+                        <td  class="th-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="rounded" src="css/assets/images/16.jpeg" alt="slika proizvoda">
+                        </td>
+                        <td>1999,99RSD</td>
+                        <td  class="th-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="rounded" src="css/assets/images/facebook.jpeg" alt="slika proizvoda">
+                        </td>
+                        <td>1999,99RSD</td>
+                        <td  class="th-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                    </tr>
+                </tbody>     
+            </table>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <ul class="list-infrastructure"><!-- stilizovati listu po nekom tvom nahodjenju da izgleda malo zanimljivo, baci neku kreaciju :D, jedino sto je "obavezno" tacke ne treba da postoje -->
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li><!-- poigraj se malo sa stilovima za ove li-eve -->
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+            </ul>
+        </section>
+        <section>
+            <form action="">
+                <input type="text" name="search" placeholder="search here">
+                <div >
+                    <button class="btn-input-text">Submit</button>
+                </div>
+                <div class="custom-select">
+                    <select>
+                        <option value="">Open this select menu</option>
+                        <option value="">Shaomi redmi</option>
+                        <option value="">Sumsung</option>
+                        <option value="">Nokia</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea class="area-comment" name="question" id="question" cols="30" rows="10" placeholder="Unesite text za komentar"></textarea>
+                </div> 
+                <div>
+                    <button class="btn">Posalji</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function humburger() {
+            var x = document.getElementById("nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+            // Logika za idi na vrh
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
