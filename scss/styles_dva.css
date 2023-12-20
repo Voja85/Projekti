@@ -312,7 +312,7 @@ body {
   width: 100%;
   text-align: justify;
   margin: 0;
-  background-color: #FAF0D7;
+  background-color: black;
   font-size: 12px;
   line-height: 14px;
   overflow-x: hidden;
@@ -395,6 +395,26 @@ p { /* p tag po defaultu ima margin bottom, setovati taj margin na 0 i videti ma
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.success {
+  background-color: rgb(130, 185, 98);
+  border-color: rgb(5, 92, 5);
+}
+
+.success:hover {
+  border-color: rgb(130, 185, 98);
+  background-color: rgb(5, 92, 5);
+}
+
+.error {
+  background-color: rgb(207, 58, 58);
+  border-color: rgb(194, 6, 6);
+}
+
+.error:hover {
+  border-color: rgb(207, 58, 58);
+  background-color: rgb(194, 6, 6);
 }
 
 .colouring {
